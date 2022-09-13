@@ -22,6 +22,8 @@ services:
         {{/if}}
       function:
         name: serverless_demo_nodejs12
+        oss: "{{ bucketName }}"
+        oss2: "{{ bucketName2 }}"
         description: 这是一个Nodejs12的测试案例
         codeUri: ./
         handler: index.handler
